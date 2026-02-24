@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Suraj Bhai - Insurance Advisor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header img {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.header-info {
+    background-color: #004aad;
+    color: white;
+    padding: 15px;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.details {
+    display: none;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #002b6b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
+<script>
+function toggleDetails(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "none" || x.style.display === "") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <img src="bajaj-life-logo.avif" alt="Bajaj Life Logo">
+</header>
+
+<div class="header-info">
+    <h1>Suraj Bhai</h1>
+    <p>Authorized Insurance Advisor</p>
+    <p>Dombivli | 📞 8928069993 | 💬 WhatsApp Available</p>
+</div>
+
+<section>
+<h2>Our Insurance Services</h2>
+
+<div class="card" onclick="toggleDetails('life')">
+<h3>Life Insurance</h3>
+<p>Click to view full details</p>
+
+<div id="life" class="details">
+<ul>
+<li>High Coverage Protection</li>
+<li>Tax Benefits under 80C</li>
+<li>Affordable Premium</li>
+<li>Full Claim Assistance</li>
+</ul>
+<a class="btn" href="https://wa.me/918928069993">Enquire Now</a>
+</div>
+</div>
+
+<div class="card" onclick="toggleDetails('health')">
+<h3>Health Insurance</h3>
+<p>Click to view full details</p>
+
+<div id="health" class="details">
+<ul>
+<li>Cashless Hospitalization</li>
+<li>Pre & Post Hospital Cover</li>
+<li>Family Floater Option</li>
+<li>Tax Benefits</li>
+</ul>
+<a class="btn" href="https://wa.me/918928069993">Enquire Now</a>
+</div>
+</div>
+
+<div class="card" onclick="toggleDetails('ulip')">
+<h3>ULIP Plans</h3>
+<p>Click to view full details</p>
+
+<div id="ulip" class="details">
+<ul>
+<li>Insurance + Investment</li>
+<li>Market Linked Returns</li>
+<li>Long Term Wealth Growth</li>
+<li>Life Cover Included</li>
+</ul>
+<a class="btn" href="https://wa.me/918928069993">Enquire Now</a>
+</div>
+</div>
+
+<div class="card" onclick="toggleDetails('child')">
+<h3>Child Future Plans</h3>
+<p>Click to view full details</p>
+
+<div id="child" class="details">
+<ul>
+<li>Education Planning</li>
+<li>Goal Based Investment</li>
+<li>Premium Waiver Benefit</li>
+<li>Secure Future Planning</li>
+</ul>
+<a class="btn" href="https://wa.me/918928069993">Enquire Now</a>
+</div>
+</div>
+
+<div class="card" onclick="toggleDetails('retirement')">
+<h3>Retirement Plans</h3>
+<p>Click to view full details</p>
+
+<div id="retirement" class="details">
+<ul>
+<li>Guaranteed Income Option</li>
+<li>Long Term Pension Planning</li>
+<li>Tax Saving Benefits</li>
+<li>Financial Freedom After 60</li>
+</ul>
+<a class="btn" href="https://wa.me/918928069993">Enquire Now</a>
+</div>
+</div>
+
+</section>
+
+<section>
+<h2>Contact Me</h2>
+<p>📍 Location: Dombivli</p>
+<p>📞 Phone: 8928069993</p>
+<p>📧 Email: officialsurajbhai121@gmail.com</p>
+</section>
+
+<footer>
+<p>This is an individual advisor website and not the official website of Bajaj Allianz.</p>
+</footer>
+
+</body>
+</html>
